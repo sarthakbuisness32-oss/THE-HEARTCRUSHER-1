@@ -20,7 +20,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
-import org.bukkit.event.player.EntitySwapHandItemsEvent;
+import org.bukkit.event.player.PlayerSwapHandItemsEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
@@ -344,7 +344,7 @@ public final class HeartcrusherPlugin extends JavaPlugin implements Listener {
 
     // Sneak + F abilities
     @EventHandler
-    public void onSwapHands(EntitySwapHandItemsEvent event) {
+   public void onSwapHands(PlayerSwapHandItemsEvent event) {
         if (!(event.getEntity() instanceof Player player)) return;
         if (!player.isSneaking()) return;
 
