@@ -345,7 +345,7 @@ public final class HeartcrusherPlugin extends JavaPlugin implements Listener {
     // Sneak + F abilities
     @EventHandler
    public void onSwapHands(PlayerSwapHandItemsEvent event) {
-        if (!(event.getEntity() instanceof Player player)) return;
+       Player player = event.getPlayer();
         if (!player.isSneaking()) return;
 
         boolean holding =
