@@ -1,0 +1,17 @@
+# Performance settings for THE HEARTCRUSHER.
+# Divine Piercer creates a vertical chain of TNT explosions.
+# A larger column-step means fewer explosions and better performance.
+column-step: 8
+column-explosion-power: 2.5
+column-tnt-fuse-ticks: 0
+column-interval-ticks: 1
+
+# Heaven's Wrath: 8 concentric rings, with 8 TNT in each ring by default.
+sky-rings: 8
+tnt-per-ring: 8
+sky-height: 18
+sky-tnt-fuse-ticks: 50
+sky-tnt-yield: 4.0
+
+# Both abilities use the same cooldown duration, in seconds.
+cooldown-seconds: 8

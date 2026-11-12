@@ -1,0 +1,16 @@
+name: Heartcrusher
+version: 1.0.0
+main: com.interio.heartcrusher.HeartcrusherPlugin
+api-version: '26.1'
+author: Interio
+description: Adds THE HEARTCRUSHER, a custom scripted-series mace.
+commands:
+  heartcrusher:
+    description: Give THE HEARTCRUSHER.
+    usage: /heartcrusher give <player>
+    aliases: [hc]
+    permission: heartcrusher.admin
+permissions:
+  heartcrusher.admin:
+    description: Allows giving THE HEARTCRUSHER.
+    default: op
